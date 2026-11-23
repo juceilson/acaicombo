@@ -16,7 +16,7 @@ public class Acai {
     private Long id;
     private String nome;
     private String descricao;
-    private int preco;
-    private int volume;
+    private float preco;
+    private String volume;
     private String img_url;
 }
