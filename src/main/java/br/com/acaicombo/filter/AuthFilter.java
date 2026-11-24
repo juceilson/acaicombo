@@ -38,10 +38,15 @@ public class AuthFilter implements Filter {
         String role = usuario.getRole().name();
 
         if ("USER".equals(role)) {
-            if (uri.contains("listarAcais") || uri.contains("bolos/list") || uri.contains("auth/me") || uri.contains("logout")) {
+            if (uri.contains("listarAcais")
+                    || uri.contains("acais/list")
+                    || uri.contains("auth/me")
+                    || uri.contains("logout")
+                    || uri.contains("img")
+            ) {
                 chain.doFilter(request, response);
             } else {
-                resp.sendRedirect("listarAcais.html");
+                resp.sendRedirect("/listarAcais.html");
             }
 
         } else if ("ADMIN".equals(role)) {
