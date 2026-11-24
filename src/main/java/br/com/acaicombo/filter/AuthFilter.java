@@ -17,7 +17,11 @@ public class AuthFilter implements Filter {
         HttpServletResponse resp = (HttpServletResponse) response;
         String uri = req.getRequestURI();
 
-        if (uri.endsWith("login") || uri.endsWith("login.html")) {
+        // para liberar login e seus arquivos estáticos
+        if (uri.endsWith("login")
+                || uri.endsWith("login.html")
+                || uri.startsWith(req.getContextPath() + "/js/login.js")
+                || uri.startsWith(req.getContextPath() + "/css/login.css")) {
             chain.doFilter(request, response);
             return;
         }
@@ -27,24 +31,24 @@ public class AuthFilter implements Filter {
                 null;
 
         if (usuario == null) {
-            resp.sendRedirect("login.html");
+            resp.sendRedirect("/login.html");
             return;
         }
 
         String role = usuario.getRole().name();
 
         if ("USER".equals(role)) {
-            if (uri.contains("listarBolos") || uri.contains("bolos/list") || uri.contains("auth/me") || uri.contains("logout")) {
+            if (uri.contains("listarAcais") || uri.contains("bolos/list") || uri.contains("auth/me") || uri.contains("logout")) {
                 chain.doFilter(request, response);
             } else {
-                resp.sendRedirect("listarBolos.html");
+                resp.sendRedirect("listarAcais.html");
             }
 
         } else if ("ADMIN".equals(role)) {
             chain.doFilter(request, response);
 
         } else {
-            resp.sendRedirect("login.html");
+            resp.sendRedirect("/login.html");
         }
     }
 }
