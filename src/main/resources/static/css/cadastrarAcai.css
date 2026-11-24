@@ -1,0 +1,30 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-violet {
+    background-color: #851b88;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #851b88;
+}
+
+.cadastrar-acai-form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+label {
+    font-weight: 500;
+}
+
+footer {
+    font-size: 0.9rem;
+}
