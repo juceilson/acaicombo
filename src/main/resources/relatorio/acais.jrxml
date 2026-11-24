@@ -7,24 +7,24 @@
 	<field name="volume" class="java.lang.String"/>
 	<background splitType="Stretch"/>
 	<title height="100" splitType="Stretch">
-		<element kind="staticText" uuid="1102da45-1a13-45ad-9fc3-1516179f43c6" x="142" y="20" width="270" height="46" forecolor="#B50CE8" fontSize="31.0" bold="true">
+		<element kind="staticText" uuid="1102da45-1a13-45ad-9fc3-1516179f43c6" x="142" y="20" width="270" height="46" forecolor="#851B88" fontSize="31.0" bold="true">
 			<text><![CDATA[Combos de Açaí]]></text>
 		</element>
 	</title>
 	<columnHeader height="61" splitType="Stretch">
-		<element kind="staticText" uuid="3c61961e-22a7-499c-acd0-ffc663076eba" x="0" y="31" width="100" height="30" forecolor="#FFFFFF" backcolor="#B50CE8" mode="Opaque" fontSize="12.0" bold="true" vTextAlign="Middle">
+		<element kind="staticText" uuid="3c61961e-22a7-499c-acd0-ffc663076eba" x="0" y="31" width="100" height="30" forecolor="#FFFFFF" backcolor="#851B88" mode="Opaque" fontSize="12.0" bold="true" vTextAlign="Middle">
 			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d2c34b8a-f650-44ba-a563-f1ca99f6a1c3"/>
 			<text><![CDATA[Nome]]></text>
 		</element>
-		<element kind="staticText" uuid="cfc8a55d-9a10-47ef-b9ef-dc2ea3e06e0e" x="260" y="31" width="295" height="30" forecolor="#FFFFFF" backcolor="#B50CE8" mode="Opaque" fontSize="12.0" bold="true" vTextAlign="Middle">
+		<element kind="staticText" uuid="cfc8a55d-9a10-47ef-b9ef-dc2ea3e06e0e" x="260" y="31" width="295" height="30" forecolor="#FFFFFF" backcolor="#851B88" mode="Opaque" fontSize="12.0" bold="true" vTextAlign="Middle">
 			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b53cf589-af8d-45e2-8a8c-d1a31e8e4dfa"/>
 			<text><![CDATA[Descrição]]></text>
 		</element>
-		<element kind="staticText" uuid="1afebab1-12ca-4850-8a5d-69c4ffe8f613" x="180" y="31" width="80" height="30" forecolor="#FFFFFF" backcolor="#B50CE8" mode="Opaque" fontSize="12.0" bold="true" vTextAlign="Middle">
+		<element kind="staticText" uuid="1afebab1-12ca-4850-8a5d-69c4ffe8f613" x="180" y="31" width="80" height="30" forecolor="#FFFFFF" backcolor="#851B88" mode="Opaque" fontSize="12.0" bold="true" vTextAlign="Middle">
 			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f2e4c954-243c-47ff-8351-93c54fa3608f"/>
 			<text><![CDATA[Preço]]></text>
 		</element>
-		<element kind="staticText" uuid="10b695c3-6578-441d-a7f9-66f586761edb" x="100" y="31" width="80" height="30" forecolor="#FFFFFF" backcolor="#B50CE8" mode="Opaque" fontSize="12.0" bold="true" vTextAlign="Middle">
+		<element kind="staticText" uuid="10b695c3-6578-441d-a7f9-66f586761edb" x="100" y="31" width="80" height="30" forecolor="#FFFFFF" backcolor="#851B88" mode="Opaque" fontSize="12.0" bold="true" vTextAlign="Middle">
 			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5023b2d0-22cd-4299-8be1-edabd21df669"/>
 			<text><![CDATA[Volume]]></text>
 		</element>
