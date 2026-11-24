@@ -1,6 +1,28 @@
-# Açaí Combo
+# Definição do cenário da Empresa Fictícia
 
-Aplicação web para gestão de cardápio de Açaí e geração de relatório.
+A açaiteria “AçaíCombo” gostaria de um sistema que montasse o cardápio com açaís personalizados que os usuários costumam pedir. Para isso, esse projeto foi desenvolvido com a intenção de suprir essa necessidade e também gerar relatórios sobres esses combos de pedidos. 
+A Aplicação foi implementada com a linguagem e o framework Spring-Boot utilizando a
+arquitetura em três camadas MVC.
+
+## Estrutura do Projeto
+
+### Camada de Aplicação
+É a camada responsável pela exibição e navegação entre as páginas.
+- Páginas em HTML para login, cadastro, listagem dos dados.
+- Arquivos JavaScript para chamar as rotas da API e manipular as páginas.
+- Arquivos CSS e Bootstrap para estilização das páginas.
+
+### Camada de Negócios
+É a camada da lógica de aplicação, responsável pelas regras da manipulação dos dados.
+- `AuthService` Faz a autenticação de usuários e criptografia de senha.
+- `ReportService` gera os relatórios em PDF usando a biblioteca JasperReports.
+
+### Camada de Persistência
+É responsável pela comunicação com o banco de dados.
+- Entidades JPA: `Acai`, `User`.
+- Repositórios: `AcaiRepository`, `UserRepository`.
+- Banco de dados utilizado: MariaDB.
+- Configuração de conexão em `application.properties`.
 
 ### 1. Requisitos para execução do projeto
 
