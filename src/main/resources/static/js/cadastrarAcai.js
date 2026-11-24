@@ -23,36 +23,3 @@ async function onSubmit(e) {
 window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('acaiForm').addEventListener('submit', onSubmit);
 });
-
-async function baixarRelatorioPDF(event) {
-    event.preventDefault();
-    try {
-        const response = await fetch('/relatorio/pdf');
-
-        if (!response.ok) {
-            throw new Error('Erro ao gerar relatório');
-        }
-
-        const blob = await response.blob();
-        const pdfUrl = URL.createObjectURL(blob);
-        window.open(pdfUrl, '_blank');
-    } catch (e) {
-        console.error(e);
-        alert('Não foi possível carregar o relatório PDF.');
-    }
-}
-
-//----------------------- Mudar a imagem dinamicamente -------------------------------
-
-const imgInput = document.getElementById("img_url");
-const imgPreview = document.getElementById("img_preview");
-const fallbackImg = "/img/acai-tradicional.png";
-
-function trocarImagem() {
-    imgPreview.src = imgInput.value.trim() || fallbackImg;
-}
-
-imgInput.addEventListener("change", trocarImagem);
-imgPreview.addEventListener("error", () => {
-    imgPreview.src = fallbackImg;
-});
